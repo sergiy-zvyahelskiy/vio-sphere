@@ -4,8 +4,10 @@
   angular
     .module('vioSphere.channels')
     .controller('channelsCtrl', [
-      function(){
-        console.log('channelsCtrl');
+      '$scope',
+      'channelsFactory',
+      function($scope, channels){
+        $scope.channelList = channels.getList();
       }
     ]);
 })();
