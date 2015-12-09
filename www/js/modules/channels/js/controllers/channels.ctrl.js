@@ -7,7 +7,10 @@
       '$scope',
       'channelsFactory',
       function($scope, channels){
-        $scope.channelList = channels.getList();
+        channels.getEpgList().then(function(list){
+          $scope.channelList = list;
+          console.log(list);
+        });
       }
     ]);
 })();

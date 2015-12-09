@@ -2,9 +2,9 @@
   <ion-content>
     <ion-list>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="channel in channelList" type="item-text-wrap" href="#/channels/{{channel.id}}">
-        <img ng-src="{{channel.thumb}}">
-        <h2>{{channel.name}}</h2>
-        <p>{{channel.lastText}}</p>
+        <img ng-src="{{channel.thumbnail}}">
+        <h2>{{channel.title}}</h2>
+        <p>{{channel.end}}</p>
         <i class="icon ion-chevron-right icon-accessory"></i>
       </ion-item>
     </ion-list>
